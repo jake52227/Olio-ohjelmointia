@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">vko8</string>
+
+    <string-array name="bottlesArray">
+        <item>Pepsi Max</item>
+        <item>Coca-Cola Zero</item>
+        <item>Fanta Zero</item>
+    </string-array>
+
+    <string-array name="bottleSizesArray">
+        <item>0.5</item>
+        <item>1.5</item>
+    </string-array>
+
+</resources>

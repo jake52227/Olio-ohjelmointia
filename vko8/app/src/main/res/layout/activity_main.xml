@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/dispenserScreen"
+        android:layout_width="350dp"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:text="Bottle dispenser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <SeekBar
+        android:id="@+id/moneyBar"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="80dp"
+        android:max="10"
+        android:min="0"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dispenserScreen"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <Button
+        android:id="@+id/moneyBarAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:onClick="onMoneyAdd"
+        android:text="add money"
+        app:layout_constraintBottom_toBottomOf="@+id/moneyBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/moneyBar"
+        app:layout_constraintTop_toTopOf="@+id/moneyBar"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/moneyBarValue"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/moneyBar"
+        app:layout_constraintEnd_toStartOf="@+id/moneyBar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/moneyBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/bottleOptions"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="right"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/bottleSizeOptions"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bottleSizeOptions"
+        app:layout_constraintTop_toBottomOf="@+id/bottleSizeOptions" />
+
+    <Spinner
+        android:id="@+id/bottleSizeOptions"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:gravity="right"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/bottleBuy"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyBar" />
+
+    <Button
+        android:id="@+id/bottleBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:onClick="onBottlePurchase"
+        android:text="buy"
+        app:layout_constraintBottom_toBottomOf="@+id/bottleOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottleSizeOptions"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <Button
+        android:id="@+id/cashReturnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="onCashReturn"
+        android:text="return cash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottleBuy" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="209dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="choose your bottle and size"
+        app:layout_constraintBottom_toTopOf="@+id/bottleSizeOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/printReceipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onGetReceipt"
+        android:text="get receipt"
+        app:layout_constraintBottom_toBottomOf="@+id/cashReturnButton"
+        app:layout_constraintEnd_toStartOf="@+id/cashReturnButton"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cashReturnButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/listBottlesButton"
+        android:onClick="onListBottles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="List bottles"
+        app:layout_constraintEnd_toEndOf="@+id/cashReturnButton"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="@+id/printReceipt"
+        app:layout_constraintTop_toBottomOf="@+id/cashReturnButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
