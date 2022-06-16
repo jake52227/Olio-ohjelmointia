@@ -22,8 +22,8 @@ import java.util.Date;
 
  /*
     Lähteet RecyclerView:n käyttämiselle. Lähteistä saatuja tietoja käytetty Layout Managerin asettelussa RecyclerView:lle sekä Displayer-luokassa:
-    https://developer.android.com/guide/topics/ui/layout/recyclerview
-    https://www.youtube.com/watch?v=__OMnFR-wZU
+    Android developers: https://developer.android.com/guide/topics/ui/layout/recyclerview
+    Ben O'Brien:n 7.4.2020 video aiheesta https://www.youtube.com/watch?v=__OMnFR-wZU
  */
 
 
