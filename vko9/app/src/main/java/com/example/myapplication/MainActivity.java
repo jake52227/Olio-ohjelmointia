@@ -20,6 +20,12 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+ /*
+    Lähteet RecyclerView:n käyttämiselle. Lähteistä saatuja tietoja käytetty Layout Managerin asettelussa RecyclerView:lle sekä Displayer-luokassa:
+    https://developer.android.com/guide/topics/ui/layout/recyclerview
+    https://www.youtube.com/watch?v=__OMnFR-wZU
+ */
+
 
 public class MainActivity extends AppCompatActivity {
 
