@@ -1,3 +1,4 @@
+// Jaakko Pyrhönen 12.6.2022
 package com.example.vko8;
 
 import androidx.appcompat.app.AppCompatActivity;
