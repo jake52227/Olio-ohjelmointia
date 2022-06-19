@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/searchBarInput"
+        android:layout_width="386dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:gravity="start|top"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="407dp"
+        android:layout_height="564dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageRefresh"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/pageBack"
+        android:onClick="previousPageClick"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@+id/searchBarInput"
+        app:layout_constraintTop_toBottomOf="@+id/searchBarInput"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <ImageButton
+        android:id="@+id/pageForward"
+        android:onClick="nextPageClick"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:rotation="180"
+        app:layout_constraintStart_toEndOf="@+id/pageBack"
+        app:layout_constraintTop_toBottomOf="@+id/searchBarInput"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageButton
+        android:id="@+id/pageRefresh"
+        android:onClick="pageRefreshClick"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@+id/pageForward"
+        app:layout_constraintTop_toBottomOf="@+id/searchBarInput"
+        app:srcCompat="@android:drawable/ic_popup_sync" />
+
+    <Button
+        android:id="@+id/jsInitialize"
+        android:onClick="jsInit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="init js"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
+        app:layout_constraintEnd_toStartOf="@+id/jsShoutout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pageRefresh"
+        app:layout_constraintTop_toBottomOf="@+id/searchBarInput"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/jsShoutout"
+        android:onClick="jsShoutout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shoutout"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/jsInitialize"
+        app:layout_constraintEnd_toEndOf="@+id/searchBarInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
