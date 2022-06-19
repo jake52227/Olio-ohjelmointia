@@ -62,13 +62,14 @@ public class ContentFilter {
 
             }
         } else {
+            Parser tempParser = new Parser();
             for (Theatre t : theatresList.getTheatreList()) {
                 if (t.getPlace().equals("NO SELECTION")) {
                     continue;
                 }
                 // muutoin joudutaan hakemaan aina uudet tiedot teatterien elokuvista ensin:
                 currentMovieList.clearList();
-                currentMovieList.populateListByDate(new Parser(), t.getId(), date);
+                currentMovieList.populateListByDate(tempParser, t.getId(), date);
                 for (Movie m : currentMovieList.getList()) {
                     if (m.getName().equals(movie)) {
                         String startTime = parseTime(m.getShowStart());

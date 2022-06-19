@@ -43,7 +43,6 @@ public class MovieList {
             }
         }
         result += "." + parts[parts.length - 1];
-        System.out.println(result);
         return result;
     }
 

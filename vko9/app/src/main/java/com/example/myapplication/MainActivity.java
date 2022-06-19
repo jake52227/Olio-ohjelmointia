@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
     private TextView infoText;
 
 
+    /*
+    Lähteet RecyclerView:n käyttämiselle. Lähteistä saatuja tietoja käytetty Layout Managerin asettelussa RecyclerView:lle sekä Displayer-luokassa:
+    Android developers: https://developer.android.com/guide/topics/ui/layout/recyclerview
+    Ben O'Brien:n 7.4.2020 video aiheesta https://www.youtube.com/watch?v=__OMnFR-wZU
+     */
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
