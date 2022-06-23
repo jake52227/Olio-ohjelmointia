@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">vko11</string>
+
+    <string name="allowEditingText">Salli tekstin muokkaus</string>
+    <string name="sampleText">Hei. Tämä on esimerkkiteksti</string>
+    <string name="forWriting">Tämä on kirjoittamista varten</string>
+    <string name="fontSize">fonttikoko</string>
+    <string name="textColor">tekstiväri</string>
+    <string name="fontFamily">fontti</string>
+    <string name="style">tyyli</string>
+    <string name="displayText">teksti</string>
+    <string name="language">kieli</string>
+    <string name="exitToast">poistu valikosta, jotta muutokset näkyvät</string>
+
+    <string-array name="fontFamilyArray">
+        <item>ei valintaa</item>
+        <item>casual</item>
+        <item>serif</item>
+        <item>sans-serif</item>
+        <item>monospace</item>
+        <item>cursive</item>
+    </string-array>
+
+    <string-array name="fontColorArray">
+        <item>ei valintaa</item>
+        <item>pinkki</item>
+        <item>violetti</item>
+        <item>sininen</item>
+        <item>syaani</item>
+        <item>vihreä</item>
+        <item>valkoinen</item>
+    </string-array>
+
+    <string-array name="styleArray">
+        <item>oletus</item>
+        <item>lihavoitu</item>
+        <item>kursivoitu</item>
+    </string-array>
+
+    <string-array name="languageArray">
+        <item>englanti</item>
+        <item>suomi</item>
+        <item>ruotsi</item>
+    </string-array>
+
+</resources>

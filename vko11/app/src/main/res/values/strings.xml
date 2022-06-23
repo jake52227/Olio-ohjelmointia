@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">vko11</string>
+
+    <string name="allowEditingText">allow editing of text</string>
+    <string name="sampleText">Hello. This is a sample text</string>
+    <string name="forWriting">this is for writing</string>
+    <string name="fontSize">font size</string>
+    <string name="textColor">text color</string>
+    <string name="fontFamily">font family</string>
+    <string name="style">style</string>
+    <string name="displayText">display text</string>
+    <string name="language">language</string>
+    <string name="exitToast">exit settings to apply changes</string>
+
+    <string-array name="fontFamilyArray">
+        <item>no selection</item>
+        <item>casual</item>
+        <item>serif</item>
+        <item>sans-serif</item>
+        <item>monospace</item>
+        <item>cursive</item>
+    </string-array>
+
+    <string-array name="fontColorArray">
+        <item>no selection</item>
+        <item>pink</item>
+        <item>purple</item>
+        <item>blue</item>
+        <item>cyan</item>
+        <item>green</item>
+        <item>white</item>
+    </string-array>
+
+    <string-array name="styleArray">
+        <item>default</item>
+        <item>bold</item>
+        <item>italic</item>
+    </string-array>
+
+    <string-array name="languageArray">
+        <item>English</item>
+        <item>Finnish</item>
+        <item>Swedish</item>
+    </string-array>
+
+</resources>
